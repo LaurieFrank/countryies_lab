@@ -1,8 +1,8 @@
 <template lang="html">
   <div>
-    <ul>
+    <select>
       <list-item v-for="(country, index) in countries" :country="country" :key="index"></list-item>
-    </ul>
+    </select>
   </div>
 </template>
 

@@ -1,5 +1,5 @@
 <template lang="html">
-  <li @click="handleClick">{{country.name}}</li>
+  <option @click="handleClick">{{country.name}}</option>
 </template>
 
 <script>

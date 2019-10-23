@@ -1,13 +1,13 @@
 <template lang="html">
   <div class="">
     <h1>Countries</h1>
-    <countries-list :countries="countries"></countries-list>
+    <country-select :countries="countries"></country-select>
     <country-detail :country="selectedCountry"></country-detail>
   </div>
 </template>
 
 <script>
-import CountriesList from './components/CountriesList.vue';
+import CountrySelect from './components/CountrySelect.vue';
 import CountryDetail from './components/CountryDetail.vue';
 import {eventBus} from './main.js'
 
@@ -28,7 +28,7 @@ mounted(){
   .then(data => this.countries = data)
   },
   components: {
-    "countries-list": CountriesList,
+    "country-select": CountrySelect,
     "country-detail": CountryDetail
   }
 }
