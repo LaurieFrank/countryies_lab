@@ -1,6 +1,6 @@
 <template lang="html">
   <div>
-    <select v-on:change="handleChange">
+    <select> //could add v-on:change="handleChange"
       <option v-for="(country, index) in countries" :key="index">{{country.name}}</option>
     </select>
   </div>
@@ -15,7 +15,7 @@ export default {
   //   handleChange() {
   //     console.log("Im in the handlechange");
   //   }
-  }
+  // }
 }
 
 </script>
